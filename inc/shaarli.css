@@ -84,13 +84,11 @@ h1 {
 
 .linkeditbuttons {
     left: 2px;
-    padding: 4px 2px 2px 2px;
-    -webkit-border-radius: 0px 6px 6px 0px;
-    -moz-border-radius: 0px 6px 6px 0px;
-    -o-border-radius: 0px 6px 6px 0px;
-    -ms-border-radius: 0px 6px 6px 0px;
+    padding: 10px;
     border-radius: 0px 6px 6px 0px;
+    background-color: #CCC;
     float:left;
+    box-shadow: 1px 1px #FFF, -2px 1px 2px #AAA inset
 }
 
 .linkfooter{
@@ -390,7 +388,6 @@ h1 {
 }
 
 #linklist li {
-    padding: 4px 10px 15px 20px;
     border-top: 1px solid #bbb;
     clear: both;
     background-color: #F2F2F2;
@@ -401,12 +398,6 @@ h1 {
     background: -o-linear-gradient(#F2F2F2, #ffffff);
     background: linear-gradient(#F2F2F2, #ffffff);
 }
-
-/*
-#linklist li.publicLinkHightLight:hover, #linklist li:hover {
-    background: #E9FFCE;
-}
-*/
 
 .linkdate, .linkarchive {
     font-size:8pt;
@@ -432,15 +423,13 @@ a.qrcode img {
     margin:auto;
 }
 
-#linklist li {
-    padding-left: 30px;
-}
-
 .private .linktitle a {
     color: #969696;
 }
 
 .linktitle {
+    margin:10px 10px 10px 10px;
+    text-align: center;
     font-size: 14pt;
     font-weight: bold;
     margin-bottom: 10px;
