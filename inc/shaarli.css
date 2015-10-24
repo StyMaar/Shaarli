@@ -93,6 +93,7 @@ h1 {
 
 .linkfooter{
     clear: both;
+    padding:15px;
 }
 
 #pageheader #logo {
@@ -468,11 +469,8 @@ a.qrcode img {
 .linkdescription {
     padding:10px;
     color: #000;
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-weight: normal;
-    min-height: 60px;
     overflow: auto;
+    font-size: 10pt;
 }
 
 .linkdescription a {
@@ -485,7 +483,6 @@ a.qrcode img {
 }
 
 .linktaglist {
-    padding-top: 10px;
     line-height: 200%;
 }
 
@@ -954,10 +951,6 @@ div.dailyNoEntry {
 
     .linkurl {
 	color: #000;
-    }
-
-    .linkdescription {
-	font-size: 10pt;
     }
 
     .linktag {
