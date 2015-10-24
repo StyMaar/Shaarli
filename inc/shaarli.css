@@ -3,7 +3,7 @@
 body {
     font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
     font-size: 10pt;
-    background-color: #ffffff;
+    background-color: #1185CF;
     word-wrap: break-word;
 }
 
@@ -83,7 +83,6 @@ h1 {
 }
 
 .linkeditbuttons {
-    position: absolute;
     left: 2px;
     padding: 4px 2px 2px 2px;
 
@@ -281,7 +280,7 @@ h1 {
 
 .paging {
     padding: 5px;
-    background-color: #777;
+    background-color: #093089;
     color: #ccc;
     text-align: center;
     clear: both;
@@ -424,6 +423,11 @@ a.qrcode img {
     height: 13px;
 }
 
+#linklist{
+    width:800px;
+    margin:auto;
+}
+
 #linklist li.private {
     background: url('../images/private.png') no-repeat 4px center;
     padding-left: 30px;
@@ -440,15 +444,16 @@ a.qrcode img {
 .linktitle {
     font-size: 14pt;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .linktitle a {
     text-decoration: none;
-    color: #80AD48;
+    color: #4970A9;
 }
 
 .linktitle a:hover {
-    color: #F57900;
+    color: #F570A9;
 }
 
 .linkdate, .linkarchive {
@@ -473,10 +478,12 @@ a.qrcode img {
 }
 
 .linkdescription {
+    padding:10px;
     color: #000;
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: normal;
+    min-height: 60px;
     max-height: 400px;
     overflow: auto;
 }
