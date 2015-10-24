@@ -472,7 +472,6 @@ a.qrcode img {
     margin-bottom: 12px;
     font-weight: normal;
     min-height: 60px;
-    max-height: 400px;
     overflow: auto;
 }
 
