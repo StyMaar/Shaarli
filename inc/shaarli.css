@@ -85,12 +85,14 @@ h1 {
 .linkeditbuttons {
     left: 2px;
     padding: 4px 2px 2px 2px;
-
+    vertical-align: top;
+    display: inline-block;
     -webkit-border-radius: 0px 6px 6px 0px;
     -moz-border-radius: 0px 6px 6px 0px;
     -o-border-radius: 0px 6px 6px 0px;
     -ms-border-radius: 0px 6px 6px 0px;
     border-radius: 0px 6px 6px 0px;
+    box-sizing: border-box;
 }
 
 #pageheader #logo {
@@ -424,7 +426,7 @@ a.qrcode img {
 }
 
 #linklist{
-    width:800px;
+    max-width:900px;
     margin:auto;
 }
 
@@ -481,6 +483,9 @@ a.qrcode img {
     min-height: 60px;
     max-height: 400px;
     overflow: auto;
+    width: calc(100%-20px);
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .linkdescription a {
