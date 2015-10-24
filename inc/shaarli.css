@@ -141,13 +141,16 @@ h1 {
     white-space: nowrap;
 }
 
-#pageheader #linkcount {
-    float: right;
+#linkcount {
+    background: transparent linear-gradient(180deg, #EEE 0%, #E9E9E9 40%, #DFDFDF 100%) repeat scroll 0% 0%;
+    box-shadow: 0px -1px #FFF inset;
+    line-height: 50px;
+    color: #8C8C8C;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px #FFF;
     font-style: italic;
-    color: #bbb;
-    text-align: right;
-    padding-right: 5px;
-    margin: 3px 3px 0px 0px;
 }
 
 #pageheader {
@@ -282,24 +285,22 @@ h1 {
 }
 
 .paging {
-    padding: 5px;
-    background-color: #093089;
-    color: #ccc;
+    color: #333;
+    line-height: 3em;
+    background: #EEE linear-gradient(0deg, #AAA 0%, #CCC 18%, #CCC 100%) repeat scroll 0px 0px;
+    border-bottom: 1px solid #AAA;
+    box-shadow: 0px 1px #FFF;
+    font-size: 0.92em;
     text-align: center;
-    clear: both;
 }
 
-.paging a:link {
-    color: #ccc;
+.paging a:link, .paging a:visited {
+    color: #093089;
     text-decoration: none;
 }
 
 .paging a:visited {
-    color: #ccc;
-}
-
-.paging a:hover {
-    color: #FFFFC9;
+    color: #093089;
 }
 
 .paging a:active {
@@ -310,10 +311,8 @@ h1 {
     float: left;
 }
 
-.paging_linksperpage {
-    float: right;
-    padding-right: 5px;
-    margin: 0px 10px 2px 0px;
+.paging_linksperpage{
+    margin-left:15px;
 }
 
 .paging_linksperpage form.linksperpage {
@@ -325,8 +324,6 @@ h1 {
 }
 
 .paging_current {
-    display: inline;
-    color: #fff;
     padding: 0 20 0 20;
 }
 
