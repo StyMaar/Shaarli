@@ -22,8 +22,11 @@
 
 <div id="linklist">
 
+	
     {include="linklist.paging"}
-
+	<div id="linkcount" class="nomobile">
+    	{if="!empty($linkcount)"}{$linkcount} links{/if}
+	</div>
     {if="count($links)==0"}
         <div id="searchcriteria">Nothing found.</i></div>
     {else}
