@@ -667,13 +667,12 @@ a.qrcode img {
 }
 
 .thumbnail {
-    float: right;
-    margin: 0px 10px 0px 10px;
+    max-width: 100%;
+    text-align: center;
 }
 
 .thumbnail img {
-    border-radius: 3px;
-    box-shadow: 0.5px 0.5px 0.5px 1px #dde4e6;
+    border-radius: 8px;
 }
 
 /* If you want thumbnails on the left:
