@@ -1,13 +1,10 @@
-
-<div id="logo" title="Share your links !" onclick="document.location='?';"></div>
-
-<div id="menu">
+<div id="toggleMenu" onclick="toggleElementById('menu')">toggle menu</div>
+<div id="logo" title="Share your links !"></div>
+<span id="shaarli_title">
+  <a href="{$titleLink}">{$shaarlititle}</a>
+</span>
+<div id="menu" hidden="true">
   <ul>
-      <li><span id="shaarli_title">
-        <a href="{$titleLink}">{$shaarlititle}</a>
-    </span>
-    </li>
-  
 {if="!empty($_GET['source']) && $_GET['source']=='bookmarklet'"}
     {ignore} When called as a popup from bookmarklet, do not display menu. {/ignore}
 {else}
@@ -23,12 +20,6 @@
     <li><a href="?do=tagcloud">Tag cloud</a></li>
 {/if}
   </ul>
-</div>
-
-<div class="addLink">
-	{if="isLoggedIn()"}
-    <a href="?do=addlink">Add link</a>
-	{/if}
 </div>
 
 

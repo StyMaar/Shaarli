@@ -7,7 +7,15 @@
 <body>
 <div id="pageheader">
     {include="page.header"}
-    <div id="headerform" class="search">
+    <div id="toggleMenu" onclick="toggleElementById('addlinkform')">Add link</div>
+    <div id="toggleMenu" onclick="toggleElementById('searchform')">Search</div>
+    <div id="addlinkform" hidden="true">
+      <form method="GET" action="" name="addform" class="addform">
+        <input type="text" name="post" class="linkurl">
+        <input type="submit" value="Add link" class="bigbutton">
+      </form>
+    </div>
+    <div id="searchform" class="search" hidden="true">
         <form method="GET" class="searchform" name="searchform">
             <input type="text" tabindex="1" id="searchform_value" name="searchterm" placeholder="Search text" value=""> <input type="submit" value="Search" class="bigbutton"></form>
         <form method="GET" class="tagfilter" name="tagfilter">
