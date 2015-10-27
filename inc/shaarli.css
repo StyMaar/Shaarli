@@ -254,6 +254,10 @@ h1 {
     cursor: pointer;
 }
 
+#topmenu > div {
+  display: inline-block;
+}
+
 #shaarli_title {
     font-weight: bold;
     font-style: italic;

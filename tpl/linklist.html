@@ -6,9 +6,11 @@
 </head>
 <body>
 <div id="pageheader">
-    {include="page.header"}
-    <div id="toggleMenu" onclick="toggleElementById('addlinkform')">Add link</div>
-    <div id="toggleMenu" onclick="toggleElementById('searchform')">Search</div>
+    <div id="topmenu">
+      {include="page.header"}
+      <div id="toggleMenu" onclick="toggleElementById('addlinkform')">Add link</div>
+      <div id="toggleMenu" onclick="toggleElementById('searchform')">Search</div>
+    </div>
     <div id="addlinkform" hidden="true">
       <form method="GET" action="" name="addform" class="addform">
         <input type="text" name="post" class="linkurl">
