@@ -97,10 +97,7 @@ h1 {
 }
 
 #pageheader #logo {
-  display: block;
-  bottom: -10px;
-  left: 52px;
-  position: absolute;
+  display: table;
   background-color: #006DA4;
   border-radius: 6px 6px 0px 0px;
   border-width: 1px medium medium;
@@ -112,6 +109,15 @@ h1 {
   font-size: 1.1em;
   text-shadow: 2px 2px #000;
   color: #FFF;
+}
+
+#pageheader #logo a {
+  line-height: 0.7em;
+  font-size: 1.18em;
+  text-indent: 0.2em;
+}
+#pageheader #logo a:visited {
+  color:#FFF;
 }
 
 #pageheader #menu {
