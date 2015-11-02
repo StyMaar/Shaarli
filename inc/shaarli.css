@@ -131,24 +131,6 @@ h1 {
     box-sizing: border-box;
 }
 
-#pageheader a {
-    background-color: #333333;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#333333), to(#000000));
-    background: -webkit-linear-gradient(#333333, #000000);
-    background: -moz-linear-gradient(#333333, #000000);
-    background: -ms-linear-gradient(#333333, #000000);
-    background: -o-linear-gradient(#333333, #000000);
-    background: linear-gradient(#333333, #000000);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 3px 3px 3px 3px;
-    margin: 10px 3px 3px 3px;
-    color: #A2DD42;
-    text-decoration: none;
-    line-height: 2.5;
-    white-space: nowrap;
-}
-
 #linkcount {
     background: transparent linear-gradient(180deg, #EEE 0%, #E9E9E9 40%, #DFDFDF 100%) repeat scroll 0% 0%;
     box-shadow: 0px -1px #FFF inset;
@@ -264,21 +246,6 @@ h1 {
 
 #topmenu > div {
   display: inline-block;
-}
-
-#pageheader a:visited {
-    color: #98C943;
-    text-decoration: none;
-}
-
-#pageheader a:hover {
-    color: #FFFFC9;
-    text-decoration: none;
-}
-
-#pageheader a:active {
-    color: #bbb;
-    text-decoration: none;
 }
 
 #searchcriteria {
