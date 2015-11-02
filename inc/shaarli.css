@@ -111,7 +111,13 @@ h1 {
   color: #FFF;
 }
 
+#pageheader #logo img{
+  vertical-align: bottom;
+  margin-right: 7px;
+}
+
 #pageheader #logo a {
+  vertical-align: super;
   line-height: 0.7em;
   font-size: 1.18em;
   text-indent: 0.2em;
