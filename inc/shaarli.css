@@ -97,7 +97,7 @@ h1 {
 }
 
 #pageheader #logo {
-  display: table;
+  display: table; /*here for ensuring that the div will fit the size of its content. It could have been handled with: */
   background-color: #006DA4;
   border-radius: 6px 6px 0px 0px;
   border-width: 1px medium medium;
