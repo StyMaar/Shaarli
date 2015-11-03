@@ -145,10 +145,12 @@ h1 {
 
 #pageheader #topmenu .menuButton{
   display: inline-block;
+  margin:10px;
 }
 
 #pageheader #topmenu {
   overflow: hidden; /*pour créer un block formatting context pour que le logo ne déborde pas de la page*/
+  text-align: right;
 }
 
 #linkcount {
