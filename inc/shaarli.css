@@ -257,6 +257,7 @@ h1 {
 #searchcriteria {
     padding: 4px 0px 5px 5px;
     font-weight: bold;
+    background: #EEE linear-gradient(0deg, #AAA 0%, #CCC 18%, #CCC 100%) repeat scroll 0px 0px;
 }
 
 .paging {
