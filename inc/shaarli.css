@@ -147,6 +147,9 @@ h1 {
   display: inline-block;
 }
 
+#pageheader #topmenu {
+  overflow: hidden; /*pour créer un block formatting context pour que le logo ne déborde pas de la page*/
+}
 
 #linkcount {
     background: transparent linear-gradient(180deg, #EEE 0%, #E9E9E9 40%, #DFDFDF 100%) repeat scroll 0% 0%;
