@@ -254,10 +254,6 @@ h1 {
     cursor: pointer;
 }
 
-#topmenu > div {
-  display: inline-block;
-}
-
 #searchcriteria {
     padding: 4px 0px 5px 5px;
     font-weight: bold;
