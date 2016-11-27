@@ -3,7 +3,7 @@
 body {
     font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
     font-size: 10pt;
-    background-color: #ffffff;
+    background-color: #1185CF;
     word-wrap: break-word;
 }
 
@@ -83,25 +83,47 @@ h1 {
 }
 
 .linkeditbuttons {
-    position: absolute;
     left: 2px;
-    padding: 4px 2px 2px 2px;
-
-    -webkit-border-radius: 0px 6px 6px 0px;
-    -moz-border-radius: 0px 6px 6px 0px;
-    -o-border-radius: 0px 6px 6px 0px;
-    -ms-border-radius: 0px 6px 6px 0px;
+    padding: 10px;
     border-radius: 0px 6px 6px 0px;
+    background-color: #CCC;
+    float:left;
+    box-shadow: 1px 1px #FFF, -2px 1px 2px #AAA inset
+}
+
+.linkfooter{
+    clear: both;
+    padding:15px;
 }
 
 #pageheader #logo {
-    background-image: url('../images/logo.png');
-    background-repeat: no-repeat;
-    float: left;
-    margin: 0 10px 0 10px;
-    width: 105px;
-    height: 55px;
-    cursor: pointer;
+  float: left;
+  background-color: #006DA4;
+  border-radius: 6px 6px 0px 0px;
+  border-width: 1px medium medium;
+  border-style: solid none none;
+  border-color: rgba(255, 255, 255, 0.15) -moz-use-text-color -moz-use-text-color;
+  box-shadow: 0px -2px 2px #000;
+  height: 44px;
+  padding: 2px 10px;
+  font-size: 1.1em;
+  text-shadow: 2px 2px #000;
+  color: #FFF;
+}
+
+#pageheader #logo img{
+  vertical-align: bottom;
+  margin-right: 7px;
+}
+
+#pageheader #logo a {
+  vertical-align: super;
+  line-height: 0.7em;
+  font-size: 1.18em;
+  text-indent: 0.2em;
+}
+#pageheader #logo a:visited {
+  color:#FFF;
 }
 
 #pageheader #menu {
@@ -121,45 +143,30 @@ h1 {
     box-sizing: border-box;
 }
 
-#pageheader a {
-    background-color: #333333;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#333333), to(#000000));
-    background: -webkit-linear-gradient(#333333, #000000);
-    background: -moz-linear-gradient(#333333, #000000);
-    background: -ms-linear-gradient(#333333, #000000);
-    background: -o-linear-gradient(#333333, #000000);
-    background: linear-gradient(#333333, #000000);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 3px 3px 3px 3px;
-    margin: 10px 3px 3px 3px;
-    color: #A2DD42;
-    text-decoration: none;
-    line-height: 2.5;
-    white-space: nowrap;
+#pageheader #topmenu .menuButton{
+  display: inline-block;
+  margin:10px;
 }
 
-#pageheader #linkcount {
-    float: right;
+#pageheader #topmenu {
+  overflow: hidden; /*pour créer un block formatting context pour que le logo ne déborde pas de la page*/
+  text-align: right;
+}
+
+#linkcount {
+    background: transparent linear-gradient(180deg, #EEE 0%, #E9E9E9 40%, #DFDFDF 100%) repeat scroll 0% 0%;
+    box-shadow: 0px -1px #FFF inset;
+    line-height: 50px;
+    color: #8C8C8C;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px #FFF;
     font-style: italic;
-    color: #bbb;
-    text-align: right;
-    padding-right: 5px;
-    margin: 3px 3px 0px 0px;
 }
 
 #pageheader {
-    background-color: #333333;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#333333), to(#111111));
-    background: -webkit-linear-gradient(#333333, #111111);
-    background: -moz-linear-gradient(#333333, #111111);
-    background: -ms-linear-gradient(#333333, #111111);
-    background: -o-linear-gradient(#333333, #111111);
-    background: linear-gradient(#333333, #111111);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    width: auto;
-    padding: 0 10px 5px 10px;
-    margin: auto;
+    
 }
 
 #pageheader .search {
@@ -249,55 +256,29 @@ h1 {
     cursor: pointer;
 }
 
-#shaarli_title {
-    font-weight: bold;
-    font-style: italic;
-    margin-top: 0;
-}
-
-#shaarli_title a {
-    color: #fff !important;
-}
-
-#pageheader a:visited {
-    color: #98C943;
-    text-decoration: none;
-}
-
-#pageheader a:hover {
-    color: #FFFFC9;
-    text-decoration: none;
-}
-
-#pageheader a:active {
-    color: #bbb;
-    text-decoration: none;
-}
-
 #searchcriteria {
     padding: 4px 0px 5px 5px;
     font-weight: bold;
+    background: #EEE linear-gradient(0deg, #AAA 0%, #CCC 18%, #CCC 100%) repeat scroll 0px 0px;
 }
 
 .paging {
-    padding: 5px;
-    background-color: #777;
-    color: #ccc;
+    color: #333;
+    line-height: 3em;
+    background: #EEE linear-gradient(0deg, #AAA 0%, #CCC 18%, #CCC 100%) repeat scroll 0px 0px;
+    border-bottom: 1px solid #AAA;
+    box-shadow: 0px 1px #FFF;
+    font-size: 0.92em;
     text-align: center;
-    clear: both;
 }
 
-.paging a:link {
-    color: #ccc;
+.paging a:link, .paging a:visited {
+    color: #093089;
     text-decoration: none;
 }
 
 .paging a:visited {
-    color: #ccc;
-}
-
-.paging a:hover {
-    color: #FFFFC9;
+    color: #093089;
 }
 
 .paging a:active {
@@ -308,10 +289,8 @@ h1 {
     float: left;
 }
 
-.paging_linksperpage {
-    float: right;
-    padding-right: 5px;
-    margin: 0px 10px 2px 0px;
+.paging_linksperpage{
+    margin-left:15px;
 }
 
 .paging_linksperpage form.linksperpage {
@@ -323,8 +302,6 @@ h1 {
 }
 
 .paging_current {
-    display: inline;
-    color: #fff;
     padding: 0 20 0 20;
 }
 
@@ -387,7 +364,6 @@ h1 {
 }
 
 #linklist li {
-    padding: 4px 10px 15px 20px;
     border-top: 1px solid #bbb;
     clear: both;
     background-color: #F2F2F2;
@@ -398,12 +374,6 @@ h1 {
     background: -o-linear-gradient(#F2F2F2, #ffffff);
     background: linear-gradient(#F2F2F2, #ffffff);
 }
-
-/*
-#linklist li.publicLinkHightLight:hover, #linklist li:hover {
-    background: #E9FFCE;
-}
-*/
 
 .linkdate, .linkarchive {
     font-size:8pt;
@@ -424,13 +394,9 @@ a.qrcode img {
     height: 13px;
 }
 
-#linklist li.private {
-    background: url('../images/private.png') no-repeat 4px center;
-    padding-left: 30px;
-}
-
-#linklist li {
-    padding-left: 30px;
+#linklist, #topmenu{
+    max-width:900px;
+    margin:auto;
 }
 
 .private .linktitle a {
@@ -438,17 +404,20 @@ a.qrcode img {
 }
 
 .linktitle {
+    margin:10px 10px 10px 10px;
+    text-align: center;
     font-size: 14pt;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .linktitle a {
     text-decoration: none;
-    color: #80AD48;
+    color: #4970A9;
 }
 
 .linktitle a:hover {
-    color: #F57900;
+    color: #F570A9;
 }
 
 .linkdate, .linkarchive {
@@ -473,12 +442,10 @@ a.qrcode img {
 }
 
 .linkdescription {
+    padding:10px;
     color: #000;
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-weight: normal;
-    max-height: 400px;
     overflow: auto;
+    font-size: 10pt;
 }
 
 .linkdescription a {
@@ -491,7 +458,6 @@ a.qrcode img {
 }
 
 .linktaglist {
-    padding-top: 10px;
     line-height: 200%;
 }
 
@@ -661,13 +627,12 @@ a.qrcode img {
 }
 
 .thumbnail {
-    float: right;
-    margin: 0px 10px 0px 10px;
+    max-width: 100%;
+    text-align: center;
 }
 
 .thumbnail img {
-    border-radius: 3px;
-    box-shadow: 0.5px 0.5px 0.5px 1px #dde4e6;
+    border-radius: 8px;
 }
 
 /* If you want thumbnails on the left:
@@ -952,7 +917,6 @@ div.dailyNoEntry {
     }
 
     #linklist li.private {
-	background-color: none;
 	border-left: 0;
     }
 
@@ -962,10 +926,6 @@ div.dailyNoEntry {
 
     .linkurl {
 	color: #000;
-    }
-
-    .linkdescription {
-	font-size: 10pt;
     }
 
     .linktag {
