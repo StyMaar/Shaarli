@@ -21,9 +21,11 @@
   <div id="logo" title="Share your links !">
     <img src="../images/Shaarli.png" height="38px" width="38px"><a href="{$titleLink}">{$shaarlititle}</a>
   </div>
-  <div class="menuButton" onclick="toggleElementById('menu')">toggle menu</div>
-  <div class="menuButton" onclick="toggleElementById('addlinkform')">Add link</div>
-  <div class="menuButton" onclick="toggleElementById('searchform')">Search</div>
+  <nav id="mainmenu">
+    <div class="menuButton" onclick="toggleElementById('menu')">toggle menu</div>
+    <div class="menuButton" onclick="toggleElementById('addlinkform')">Add link</div>
+    <div class="menuButton" onclick="toggleElementById('searchform')">Search</div>
+  </nav>
 </div>
 <div id="addlinkform" hidden="true">
   <form method="GET" action="" name="addform" class="addform">

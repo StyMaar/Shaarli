@@ -11,7 +11,9 @@
 
 <div id="linklist">
 
-    {include="linklist.paging"}
+    {if="isLoggedIn()"}
+      {include="linklist.paging"}
+    {/if}
 	<div id="linkcount" class="nomobile">
     	{if="!empty($linkcount)"}{$linkcount} links{/if}
       {if="!empty($privateLinkcount)"}and {$privateLinkcount} private links{/if}
