@@ -18,8 +18,8 @@
             <label for="lf_title"><i>Title</i></label><br><input type="text" name="lf_title" id="lf_title" value="{$link.title}" class="lf_input"><br>
             <label for="lf_description"><i>Description</i></label><br><textarea name="lf_description" id="lf_description" rows="4" cols="25">{$link.description}</textarea><br>
             <label for="lf_tags"><i>Tags</i></label><br>
-            <input type="text" name="lf_tags" id="lf_tags" value="{$link.tags}" class="lf_input"
-                data-list="{loop="$tags"}{$key}, {/loop}" data-multiple autocomplete="off" ><br>
+            <input type="text" name="lf_tags" id="lf_tags" value="{$link.tags}" class="lf_input awesomplete"
+                data-list="{loop="$tags"}{$key}, {/loop}" data-multiple  data-minChars="1" autocomplete="off" ><br>
 
             {loop="$edit_link_plugin"}
                 {$value}
